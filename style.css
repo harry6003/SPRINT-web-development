@@ -1,28 +1,46 @@
 /* html{ */
-    /* padding: 0px; */
-    /* margin: 5px; */
+
+
+/* padding: 0px; */
+
+
+/* margin: 5px; */
+
+
 /* } */
-body{
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
     background-color: #999999
 }
-ul{
+
+ul {
     list-style: none;
 }
-#mainmenu{
+
+#mainmenu {
     width: 900px;
-    padding-bottom: 100px; 
+    padding-bottom: 100px;
     padding-left: 600px;
     font-family: sans-serif;
-    
 }
-#mainmenu li{
-    display:block;
+
+#mainmenu li {
+    display: block;
     width: 150px;
-    float:right;
+    float: right;
     margin-left: 2px;
-    border:2px solid #999999;
+    border: 2px solid #999999;
 }
-#mainmenu a{
+
+#mainmenu a {
     display: block;
     padding: 3px;
     text-align: center;
@@ -30,22 +48,26 @@ ul{
     background-color: #31415a;
     color: aliceblue;
 }
-#head{
+
+#head {
     font-size: 30px;
-    font-family:fantasy;
+    font-family: fantasy;
     line-height: 40px;
     color: #31415a;
 }
-#para{
+
+#para {
     font-size: 20px;
     font-family: sans-serif;
 }
-#heading{
-    background-color:#333333;
+
+#heading {
+    background-color: #333333;
     color: aliceblue;
     padding: 5px 5px 5px 5px;
 }
-#img1{
+
+#img1 {
     float: left;
     padding: 5px 5px 5px 5px;
     margin-left: 50px;
@@ -53,7 +75,8 @@ ul{
     margin-left: 50px;
     margin-right: 50px;
 }
-#img2{
+
+#img2 {
     float: right;
     padding: 5px 5px 5px 5px;
     margin-left: 50px;
@@ -61,32 +84,108 @@ ul{
     margin-left: 50px;
     margin-right: 50px;
 }
-#imga{
+
+#imga {
     float: left;
     margin-left: 15px;
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
 }
-#imgb{
+
+#imgb {
     float: right;
     margin-left: 15px;
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
 }
-#social{
+
+#social {
     text-decoration: none;
 }
-#q{
+
+#q {
     font-size: 50px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #31415a;
 }
-.vir{
+
+.vir {
     font-size: 20px;
     font-family: sans-serif;
 }
-#col{
+
+#col {
     color: #31415a;
+}
+
+
+/* footer */
+
+.footer {}
+
+.social_links {
+    padding: 1rem;
+    background: #383838;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social_links .combo {
+    transform: scale(0.9);
+    transition: 0.4s ease-in;
+    margin: 0 0.5rem;
+    height: 3em;
+    width: 3em;
+    line-height: 3em;
+}
+
+.combo .circle {
+    color: #f9f9f9;
+    transition: 0.4s ease-in;
+    font-size: 3em;
+}
+
+.combo .icon {
+    color: #444343;
+    font-size: 2rem;
+    transform: translateY(1px);
+    transition: 0.2s ease-in;
+}
+
+.combo:hover {
+    transform: scale(1.1);
+}
+
+.combo:hover,
+.combo:hover .icon {
+    color: white;
+}
+
+.ig:hover,
+.ig:hover .circle {
+    color: #e91e63;
+}
+
+.fb:hover,
+.fb:hover .circle {
+    color: #2196f3;
+}
+
+.yt:hover,
+.yt:hover .circle {
+    color: #f44336;
+}
+
+.tw:hover,
+.tw:hover .circle {
+    color: #2196f3;
+}
+
+.gt:hover,
+.gt:hover .circle {
+    color: #1f1f1f;
 }
